@@ -26,12 +26,13 @@ It's kind of middleware libs, patched pkcs11 library for working with latvian eI
 
 > app-crypt/eparaksts-token-signing
 
-It's another one middleware libs. Bridge between browsers and latvia-eid libs.
+It's another one middleware lib. Bridge between browsers and latvia-eid libs.
 
 # Notes
-If you want to use you ID card for signing documents in browser - you should install add extension to it. For Mozilla Firefox it will be 
-https://addons.mozilla.org/en-US/firefox/addon/eparaksts-signing-extension/
+If you want to use you ID card for signing documents in browser - you should add specific extension to it.
+For Mozilla Firefox it will be: https://addons.mozilla.org/en-US/firefox/addon/eparaksts-signing-extension/
 
-After installation you should go to Settings -> Security -> Security devices and manually add installed library. (If you install app-crypt/eparaksts-token-signing you library placed at /usr/lib/pkcs11/libeparaksts-module.so)
+After installation you should go to `Settings -> Security -> Security devices` and manually add installed library.
+If you install app-crypt/eparaksts-token-signing - your library placed at /usr/lib/pkcs11/libeparaksts-module.so
 
-You can check you smartcard read through `pcsc_scan` command and in eparakstitas3 application Tools -> Certificates.
+You can check your smartcard read through `pcsc_scan` command and in eparakstitas3 application Tools -> Certificates.
